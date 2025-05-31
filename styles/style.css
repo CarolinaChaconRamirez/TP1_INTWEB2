@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-Regular.ttf");
+}
+@font-face {
+  font-family: "Lato Bold";
+  src: url("../fonts/Lato/Lato-Bold.ttf");
+}
+@font-face {
+  font-family: "Playwrite";
+  src: url("../fonts/Playwrite_HU/PlaywriteHU-Regular.ttf");
+}
+body {
+  font-family: Lato;
+}
+
+.header__logo {
+  max-width: 100px;
+  background-color: aqua;
+  padding: 40px;
+}
+.header__logo__img {
+  max-width: 100%;
+}
+
+.nav {
+  padding-right: 50px;
+}
+.nav__liste {
+  display: flex;
+  justify-content: right;
+  gap: 40px;
+  flex-direction: row;
+  font-family: Lato Bold;
+}
+.nav__item {
+  list-style: none;
+}
+.nav__lien {
+  text-decoration: none;
+}
+
+.main__carrousel {
+  max-width: 40%;
+  justify-self: center;
+}
+.main__carrousel__img {
+  padding-top: 40px;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 15/11;
+  background-color: aliceblue;
+}
+
+.navfooter {
+  background-color: azure;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  justify-self: center;
+}/*# sourceMappingURL=style.css.map */
