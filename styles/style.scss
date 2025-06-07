@@ -11,6 +11,7 @@
   font-family: "Playwrite";
   src: url("../fonts/Playwrite_HU/PlaywriteHU-Regular.ttf");
 }
+$first-color:rgb(44, 44, 44);
 
 body {
   font-family: Lato;
@@ -218,7 +219,8 @@ footer{
       max-width: 300px;
       max-width: 200px;
       
-       background-color: antiquewhite;
+       background-color: $first-color;
+       color: white;
       img{
         max-width: 100%;
         aspect-ratio: 8/11;
@@ -236,33 +238,64 @@ footer{
 }
 
   .formulaire{
+    min-width:250px ;
    position :absolute;
-    background-color: red;
+    background-color: $first-color;
     color: white;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: max-content;
+ 
     padding: 30px;
     bottom:30px;
     right: 60px;
-    
+    &__champ{
+      display: flex;
+      flex-direction: column;
+      &input{
+        border: 2px solid white;
+        border-radius: 2px;
+        display: block;
+        font-size: 12px;
+        padding: 10px;
+       
+      }
+      &input:focus{
+        outline: 0;
+      }
+      &.success input{
+        border: 2px solid green;
+        
+
+      }
+         &.error input{
+        border: 2px solid violet;
+        
+
+      }
+      &.errorMessage{
+        color: white;
+        font-size: 9px;
+        
+      }
+    }
   
     
   }
 .forminfo{
   border: 1px solid red;
-  background-color: black;
+  background-color: $first-color;
   padding:30px;
   margin-top: 30px;
   margin-bottom: 50px;
   color: white;
-  min-width: 50%;
+
   
   
   display: flex;
   gap: 30px;
-  justify-self: center;
+  // justify-self: center;
+  justify-content: center;
   align-items: center;
  
 }

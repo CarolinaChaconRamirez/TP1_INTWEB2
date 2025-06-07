@@ -177,7 +177,8 @@ footer {
   padding: 30px;
   max-width: 300px;
   max-width: 200px;
-  background-color: antiquewhite;
+  background-color: rgb(44, 44, 44);
+  color: white;
 }
 .cardsinfo__items img {
   max-width: 100%;
@@ -192,30 +193,52 @@ footer {
 }
 
 .formulaire {
+  min-width: 250px;
   position: absolute;
-  background-color: red;
+  background-color: rgb(44, 44, 44);
   color: white;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: -moz-max-content;
-  width: max-content;
   padding: 30px;
   bottom: 30px;
   right: 60px;
 }
+.formulaire__champ {
+  display: flex;
+  flex-direction: column;
+}
+.formulaire__champinput {
+  border: 2px solid white;
+  border-radius: 2px;
+  display: block;
+  font-size: 12px;
+  padding: 10px;
+}
+.formulaire__champinput:focus {
+  outline: 0;
+}
+.formulaire__champ.success input {
+  border: 2px solid green;
+}
+.formulaire__champ.error input {
+  border: 2px solid violet;
+}
+.formulaire__champ.errorMessage {
+  color: white;
+  font-size: 9px;
+}
 
 .forminfo {
   border: 1px solid red;
-  background-color: black;
+  background-color: rgb(44, 44, 44);
   padding: 30px;
   margin-top: 30px;
   margin-bottom: 50px;
   color: white;
-  min-width: 50%;
   display: flex;
   gap: 30px;
-  justify-self: center;
+  justify-content: center;
   align-items: center;
 }
 
