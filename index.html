@@ -19,8 +19,10 @@
       <nav class="nav">
         <ul class="nav__liste">
           <li class="nav__item">
-            <a class="nav__lien" href="index.html">ACCUEIL</a>
+            <a class="nav__lien" href="index.html">ACCUEIL </a>
+
           </li>
+          
           <li class="nav__item">
             <a class="nav__lien" href="#">STATISTIQUES</a>
           </li>
@@ -31,16 +33,43 @@
       </nav>
     </header>
     <main class="main">
-      <div class="main__carrousel">
+      <div class="carrousel">
         <img
-          class="main__carrousel__img"
+          
           src="image/pexels-366671-991831.jpg"
           alt="image de mimi, un chat sphinx beige,du refuge."
         />
+
+        <img
+          
+          src="image/pexels-emhopper-1084425.jpg"
+          alt="image de chat blanc."
+        />
+        <img
+          
+          src="image/pexels-hamzaurann-12917058.jpg"
+          alt="image de chien dans une cage."
+        />
+           <img
+          
+          src="image/pexels-366671-991831.jpg"
+          alt="image de mimi, un chat sphinx beige,du refuge."
+        />
+
+        <img
+          
+          src="image/pexels-emhopper-1084425.jpg"
+          alt="image de chat blanc."
+        />
+        <img
+          
+          src="image/pexels-hamzaurann-12917058.jpg"
+          alt="image de chien dans une cage."
+        />
       </div>
       <div class="formsearch">
-        <h2 class="formsearch__titre"> Prêt à adopter ? </h2>
-        <h3 class="formsearch__titre formsearch__sstitre">Entrez le type d'animal à rechercher.</h3>
+        <h1 class="formsearch__titre"> Prêt à adopter ? </h1>
+        <h2 class="formsearch__titre formsearch__sstitre">Entrez le type d'animal à rechercher.</h2>
         <input
           type="text"
           class="formsearch__champ"
@@ -60,25 +89,27 @@
         />
         <button type="submit" class="formsearch__button">Rechercher</button>
       </div>
-      <section class="section">
-        <h1 class="section__titre"> Adopter c'est pour la vie.</h1>
-        <p class="section__paragraphe">Faites la différence. Aidez notre refuge à trouver une famille pour la vie à nos animaux.</p>
-
-        <article class="section__article">
+      <section class="sectionflex">
+        <div class="sectionflex__titre">
+        <h1 class="sectionflex__h1"> Adopter c'est pour la vie.</h1>
+        <p class="sectionflex__paragraphe">Faites la différence. Aidez notre refuge à trouver une famille pour la vie à nos animaux.</p>
+</div>
+<div class="sectionarticle">
+        <article class="sectionarticle__card">
           <h2>Pour leur bonheur</h2>
           <p class="section__article__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem mollitia dicta officiis ipsam adipisci obcaecat.</p>
         </article>
 
-        <article class="section__article">
+        <article class="sectionarticle__card">
           <h2>Pour leur santé</h2>
-          <p class="section__article__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem mollitia dicta officiis ipsam adipisci obcaecat.</p>
+          <p class="sectionarticle__card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem mollitia dicta officiis ipsam adipisci obcaecat.</p>
         </article>
 
-        <article class="section__article">
+        <article class="sectionarticle__card">
           <h2>Un nouveau membre de famille</h2>
           <p class="section__article__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem mollitia dicta officiis ipsam adipisci obcaecat.</p>
         </article>
-
+</div>
       </section>
       <section class="sectiongrid">
         <h1>Venez nous visiter</h1>
@@ -92,45 +123,53 @@
 
       </section>
       <section class="sectionstats">
+        
         <h1 >Des statistiques sur nos animaux en refuge.</h1>
+        <div class="sectionstats__content">
+        <div class="sectionstats__bloc1">
         <img class="sectionstats__img" src="image/035bb29f-6f3e-4d5a-bee6-5532ebead5a2.png" alt="Diagramme sur les animaux adoptés en 2023.">
+        </div>
+        <div class="sectionstats__bloc2">
         <p class="sectionstats__p">En 2023, la SPCA de Montréal a accueilli plus de 14 000 animaux, démontrant une augmentation notable des admissions par rapport aux années précédentes. Parmi eux, 4 586 animaux ont trouvé un nouveau foyer, marquant une hausse de 14 % des adoptions. Le séjour moyen des animaux au refuge variait selon l'espèce : 15 jours pour les chats, 12,8 jours pour les chiens et 28,9 jours pour les lapins. Ces chiffres illustrent l'engagement continu de la SPCA de Montréal à offrir des soins et à trouver des foyers aimants pour les animaux dans le besoin </p>
         <p class="sectionstats__p">14%</p>
         <p class="sectionstats__p">Total accueilli : plus de 14 000 animaux</p>
         <a class="sectionstats__button" href="/">En savoir plus</a>
-
+</div>
+</div>
       </section>
       <section class="cards">
       
         <h1>Des témoignages</h1>
+        
         <p>Lisez les témoignages sur l'adoption de nos animaux à la SPCA de Montréal.</p>
-        <div class="cards__items">
+        <div class="cardsinfo">
+        <div class="cardsinfo__items">
           <img src="image/pexels-duc-anh-nguyen-63701176-8212807.jpg" alt="Lapin blanc dans une cage">
           <h2>Gisele Blondet</h2>
           <h3>Ottawa</h3>
           <p>Adoptez Tipou est la meilleure décision prise dans ma vie. Une boule de poil qui nous apporte que du bonheur !</p>
         </div>
-         <div class="cards__items">
+         <div class="cardsinfo__items">
           <img src="image/pexels-alena-koval-233944-982300.jpg" alt="Chat roux sur une couverture beige en laine.">
           <h2>Malika beaudouin</h2>
           <h3>Lachute</h3>
-          <p>AChoucroute eadore sa nouvelle famille. Il ronronne tout le temps!</p>
+          <p>Choucroute adore sa nouvelle famille. Il ronronne tout le temps!</p>
         </div>
-         <div class="cards__items">
+         <div class="cardsinfo__items">
           <img src="image/pexels-ron-lach-9769849.jpg" alt="Lapin dans sa cage qui est pret à partir avec sa nouvelle famille.">
           <h2>Martin Lopez Lepage</h2>
           <h3>Montréal</h3>
           <p>Smores est lencore nerveux, mais avec beaucoup d'amour, nous faisons notre possible pour qu'il s'adapte rapidement.</p>
         </div>
-         <div class="cards__items">
+         <div class="cardsinfo__items">
           <img src="image/pexels-sims1217-16465603.jpg" alt="chiens en groupe dans un enclos">
           <h2>Louis Owanda</h2>
           <h3>Montréal</h3>
           <p>Quand j'ai vu Belle mon coeur à fondu pour elle. Je suis content de l'avoir adoptée pour ma fille.</p>
         </div>
-
+</div>
       </section>
-
+ <div>
       <section class="sectionmap">
         <h1>Venez nous visiter</h1>
 
@@ -167,6 +206,7 @@
 
   <button type="submit" class="formulaire__bouton">Envoyer</button>
 </form>
+</div>
 
     </main>
     <footer>
