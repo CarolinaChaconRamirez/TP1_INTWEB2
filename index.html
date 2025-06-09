@@ -8,6 +8,7 @@
     <title>SPCA de Montréal</title>
   </head>
   <body>
+    <a class="screen-reader-text" href="#content">Aller au contenu principal</a>
     <header class="header">
       <div class="header__logo">
         <a href="index.html"
@@ -19,10 +20,7 @@
       </div>
       <nav class="nav">
         <ul class="nav__liste">
-          <li class="nav__item">
-            <a class="nav__lien" href="index.html">ACCUEIL </a>
-
-          </li>
+         
 
           <li class="nav__item">
             <a class="nav__lien" href="#adopter">POURQUOI ADOPTER? </a>
@@ -42,7 +40,7 @@
         </ul>
       </nav>
     </header>
-    <main class="main">
+    <main id="content" class="main">
       <div class="carrousel">
         <img
           
@@ -80,29 +78,31 @@
       <div class="formsearch">
         <h1 class="formsearch__titre"> Prêt à adopter ? </h1>
         <h2 class="formsearch__titre formsearch__sstitre">Entrez le type d'animal à rechercher.</h2>
-        <input
-          type="text"
-          class="formsearch__champ"
-          placeholder="Entrez chat, chien ou lapin."
-          
-        />
+        <label for="recherche-animal" class="label">Type d'animal à rechercher</label>
+<input
+  id="recherche-animal"
+  type="text"
+  class="formsearch__champ"
+  placeholder="Entrez chat, chien ou lapin."
+/>
         <button type="submit" class="formsearch__button">Rechercher</button>
       </div>
 
       <div class="forminfo">
-        <h2 class="forminfo__titre"> Abonnez-vous à notre infolettre !</h2>
-        <input
-          type="text"
-          class="forminfo__champ"
-          placeholder="Entrez votre email."
-          
-        />
-        <button type="submit" class="formsearch__button">Rechercher</button>
+        <h2> Abonnez-vous à notre infolettre !</h2>
+        <label for="email-infolettre" class="label">Adresse courriel</label>
+<input
+  id="email-infolettre"
+  type="email"
+  class="forminfo__champ"
+  placeholder="Entrez votre email."
+/>
+        <button type="submit" class="formInfo__button">Je m'abonne</button>
       </div>
       <section id="adopter" class="sectionflex">
         <div class="sectionflex__titre">
         <h1 class="sectionflex__h1"> Adopter c'est pour la vie.</h1>
-        <p class="sectionflex__paragraphe">Faites la différence. Aidez notre refuge à trouver une famille pour la vie à nos animaux.</p>
+        <h2>Faites la différence. <br>Aidez notre refuge à trouver une famille pour la vie à nos animaux. </h2>
 </div>
 <div class="sectionarticle">
         <article class="sectionarticle__card">
@@ -121,11 +121,11 @@
         </article>
 </div>
       </section>
-      <section>
+      <section class="grille">
         <h1>Venez nous visiter</h1>
         <div id="galerie" class="sectiongrid">
         <img src="image/pexels-mali-225406.jpg" alt="Photo de chat au refuge">
-        <img src="image/pexels-hamzaurann-12917058.jpg" alt=" Photo de chien dans une cage">`
+        <img src="image/pexels-hamzaurann-12917058.jpg" alt=" Photo de chien dans une cage">
         <img src="image/pexels-ferhat-sezek-530112540-21198651.jpg" alt="Photo de lapin Lili">
         <img src="image/pexels-neosiam-672004.jpg" alt="Chien pomeranian dans notre refuge dans une cage">
          <img src="image/pexels-tatiana-azatskaya-3616232.jpg" alt=" Chat roux dans une couverture">
@@ -135,16 +135,15 @@
       </section>
       <section id="stats" class="sectionstats">
         
-        <h1 >Des statistiques sur nos animaux en refuge.</h1>
+        <h1 >Des statistiques sur nos animaux en refuge</h1>
         <div class="sectionstats__content">
         <div class="sectionstats__bloc1">
-        <img class="sectionstats__img" src="image/035bb29f-6f3e-4d5a-bee6-5532ebead5a2.png" alt="Diagramme sur les animaux adoptés en 2023.">
+        <img class="sectionstats__img" src="image/DIAGRAMME-SPCA.png" alt="Diagramme sur les animaux adoptés en 2023.">
         </div>
         <div class="sectionstats__bloc2">
         <p class="sectionstats__p">En 2023, la SPCA de Montréal a accueilli plus de 14 000 animaux, démontrant une augmentation notable des admissions par rapport aux années précédentes. Parmi eux, 4 586 animaux ont trouvé un nouveau foyer, marquant une hausse de 14 % des adoptions. Le séjour moyen des animaux au refuge variait selon l'espèce : 15 jours pour les chats, 12,8 jours pour les chiens et 28,9 jours pour les lapins. Ces chiffres illustrent l'engagement continu de la SPCA de Montréal à offrir des soins et à trouver des foyers aimants pour les animaux dans le besoin </p>
-        <p class="sectionstats__p">14%</p>
-        <p class="sectionstats__p">Total accueilli : plus de 14 000 animaux</p>
-        <a class="sectionstats__button" href="/">En savoir plus</a>
+      
+        <a class="button sectionstats__button" href="/">En savoir plus</a>
 </div>
 </div>
       </section>
@@ -152,7 +151,7 @@
       
         <h1>Des témoignages</h1>
         
-        <p>Lisez les témoignages sur l'adoption de nos animaux à la SPCA de Montréal.</p>
+        <h2>Lisez les témoignages sur l'adoption de nos animaux à la SPCA de Montréal.</h2>
         <div class="cardsinfo">
         <div class="cardsinfo__items">
           <img src="image/pexels-duc-anh-nguyen-63701176-8212807.jpg" alt="Lapin blanc dans une cage">
@@ -181,10 +180,18 @@
 </div>
       </section>
 
-      <section>
+      <section class="visite">
         <h1>Venez nous visiter</h1>
  <div class="sectionmap">
-        <div style="overflow:hidden;max-width:100%;width:100%;height:700px;"><div id="embed-ded-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=SPCA+de+Montréal,+Rue+Jean-Talon+Ouest,+Montréal,+QC,+Canada&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="google-map-html" rel="nofollow" href="https://kbj9qpmy.com/hrn" id="get-map-data">Hosting Right Now</a><style>#embed-ded-map-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}</style></div>
+       <div style="overflow:hidden;max-width:100%;width:100%;height:700px;">
+    <div id="embed-ded-map-canvas" style="height:100%; width:100%;max-width:100%;">
+      <iframe
+        style="height:100%;width:100%;border:none;"
+        src="https://www.google.com/maps/embed/v1/place?q=SPCA+de+Montréal,+Rue+Jean-Talon+Ouest,+Montréal,+QC,+Canada&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+      </iframe>
+    </div>
+    <a class="google-map-html" rel="nofollow" href="https://kbj9qpmy.com/hrn" id="get-map-data">Hosting Right Now</a>
+  </div>
 
        
 
@@ -219,25 +226,22 @@
     <div class="errorMessage"></div>
   </div>
 
-  <button type="submit" class="formulaire__bouton">Envoyer</button>
+  <button type="submit" class="formulaire__bouton--couleur">Envoyer</button>
 </form>
-</section>
 </div>
+
+</section>
+
 
 
     </main>
-    <footer>
+    
 
-      <div class="header__logo">
-        <a href="index.html"
-          ><img
-            src="image/SPCA-MONTREAL-RGB-C.png"
-            class="header__logo__img"
-            alt="Logo SPCA de Montreal"
-        /></a>
-      </div>
-
-      <nav class="navfooter">
+       <footer>
+      
+  <div class="footer__top">
+    <img src="image/SPCA-MONTREAL-blanc.png" alt="Logo SPCA" class="footer__logo" />
+     <nav class="nav">
         <ul class="nav__liste">
           <li class="nav__item">
             <a class="nav__lien" href="index.html">ACCUEIL</a>
@@ -250,28 +254,26 @@
           </li>
         </ul>
       </nav>
+  </div>
 
-    </footer>
-    <footer>
-      <div class="container">
-        <div>
-          <p>Fait par : Carolina Chacon Ramirez</p>
-        </div>
-        <div class="reseaux-sociaux">
-        
-          <div>
-            <img src="image/facebook-f-brands.svg" alt="logo facebook" />
-            <img src="image/linkedin-brands.svg" alt="logo facebook" />
-            <img src="image/x-twitter-brands.svg" alt="logo link" />
-            <img src="image/instagram-brands.svg" alt="logo facebook" />
-          </div>
-        </div>
-      
-      <div class="container_item">
-  <p><a href="tel:5148524545">514-852-4545</a></p>
-  <p><a href="mailto:cegep@troisrivieres.ca">cegep@troisrivieres.ca</a></p>
-</div>
-</div>
-    </footer>
+ 
+  <div class="footer__bottom">
+    <div class="footer__nom">
+      <p>Site réalisé par : Carolina Chacon Ramirez </p>
+    </div>
+     <div class="footer__reseaux">
+     <img src="image/facebook-f-brands.svg" alt="logo facebook" />
+            <img src="image/linkedin-brands.svg" alt="logo linkedin" />
+            <img src="image/x-twitter-brands.svg" alt="logo twitter" />
+            <img src="image/instagram-brands.svg" alt="logo instagram" />
+    </div>
+    <div class="footer__contact">
+      <p>Téléphone : 514-123-4567</p>
+      <p>Courriel : cegep@troisriviere.ca</p>
+    </div>
+    
+   
+  </div>
+</footer>
   </body>
 </html>

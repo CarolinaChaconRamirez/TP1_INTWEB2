@@ -1,0 +1,45 @@
+@mixin bouton-base($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+
+  &:hover {
+    background-color: darken($bg-color, 10%);
+    transform: scale(1.03);
+  }
+}
+@mixin nav-base($color) {
+  padding-right: 50px;
+  padding-bottom: 10px;
+  &__liste {
+    display: flex;
+    justify-content: right;
+    gap: 40px;
+    flex-direction: row;
+    font-family: Lato Bold;
+    font-size: 1.2rem;
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__lien {
+    text-decoration: none;
+    color: $color;
+
+    &:hover {
+      color: $sec-color;
+      text-decoration: underline;
+      transform: scale(1.03);
+      transition: 0.2s ease;
+    }
+  }
+}
