@@ -19,7 +19,8 @@
   .nav__lien {
     font-size: 1.1rem;
   }
-  .formsearch__champ, .formsearch__button {
+  .formsearch__champ,
+  .formsearch__button {
     width: 90%;
     font-size: 1rem;
   }
@@ -69,7 +70,8 @@
   background-color: white;
   border-bottom: 2px solid rgb(226, 223, 223);
 }
-.header__logo, .footer__logo {
+.header__logo,
+.footer__logo {
   max-width: 100px;
   padding-left: 40px;
   padding-top: 30px;
@@ -96,7 +98,7 @@
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   opacity: 0;
   animation: fade 12s infinite;
 }
@@ -219,7 +221,7 @@ footer {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
   -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   height: 1px;
   margin: -1px;
   overflow: hidden;
@@ -373,7 +375,7 @@ footer {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 3px;
 }
 
@@ -421,7 +423,7 @@ footer {
   max-width: 100%;
   aspect-ratio: 8/11;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .sectionmap {
@@ -507,4 +509,4 @@ footer {
 .grille h1 {
   font-size: 5rem;
   color: rgb(241, 5, 5);
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

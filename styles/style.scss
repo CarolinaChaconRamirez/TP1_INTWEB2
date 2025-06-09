@@ -24,7 +24,7 @@ body {
 p {
   font-family: Roboto;
   font-size: 1.3rem;
- line-height: 1.4;
+  line-height: 1.4;
 }
 
 footer {
@@ -168,7 +168,7 @@ footer {
     flex-direction: column;
     color: $sec-color;
   }
-  h2{
+  h2 {
     padding-top: 1rem;
   }
 }
@@ -187,8 +187,8 @@ footer {
     padding: 20px;
     border-radius: 8px;
 
-    h2{
-      margin-bottom:1.3rem ;
+    h2 {
+      margin-bottom: 1.3rem;
     }
   }
 }
